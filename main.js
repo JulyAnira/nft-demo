@@ -6,6 +6,7 @@ main();
 
 async function main() {
     console.log("Is this working?")
+    
     // basic setup code required for all the web pages we make that interact with MetaMask and the Ethereum blockchain
     const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
     await provider.send("eth_requestAccounts", []);
